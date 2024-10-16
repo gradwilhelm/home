@@ -9,6 +9,8 @@
     <meta name="msvalidate.01" content="E063CCF318EFE96DE78CE0A265BBC7E2" />
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/gradwilhelm/convert/refs/heads/main/icon.ico">
     <title>Grad Wilhelm</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -76,10 +78,14 @@
     <nav>
         <a href="https://gradwilhelm.github.io/home/" class="active">Start</a>
         <a href="https://gradwilhelm.github.io/convert/">Rechner</a>
-        <h1>Temperaturumrechnung</h1>
+        <h1>Grad Wilhelm</h1>
     </nav>
 
     <h2>Grad Wilhelm</h2>
-    <p>Grad Wilhelm ist eine neue Masseinheit für die Temperatur. Sie basiert auf den Eigenschaften von Gold. 0°W ist der Schmelzpunkt von Gold (1064.2°C) und 100°W ist der Siedepunkt von Gold (2856°C). Die Formel für die Umrechnung lautet: TC = TW * 19.085 + 1064.2 bzw. TW = TC / 19.085 - 1064.2.</p>
+    <p>
+        Grad Wilhelm ist eine neue Masseinheit für die Temperatur. Sie basiert auf den Eigenschaften von Gold. 0°W ist der Schmelzpunkt von Gold (1064.2°C) und 100°W ist der Siedepunkt von Gold (2856°C). Die Formel für die Umrechnung lautet:
+        <span>$$T_C = \frac{T_W}{100} \times 1905.8 + 1064.2$$</span>
+        <span>$$T_W = \frac{T_C - 1064.2}{1905.8} \times 100$$</span>
+    </p>
 </body>
 </html>
